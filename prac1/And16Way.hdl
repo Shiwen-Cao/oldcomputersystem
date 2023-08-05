@@ -10,5 +10,6 @@ CHIP And16Way {
     OUT out;
 
     PARTS:
-    // Put your code here:
+    Nand16(a=a, b=b, out=notaOrb);
+    Not16(in=notaOrb, out=out);
 }
